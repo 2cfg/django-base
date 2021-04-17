@@ -1,0 +1,7 @@
+---
+- name: Setting up common devel programms
+  hosts: devel
+  become: yes
+  
+  roles:
+    - role:  2cfg.common

@@ -1,0 +1,15 @@
+---
+# tasks file for 2cfg.common
+- name: Install git
+  apt: name=git state=latest
+
+
+
+- name: Add nodejs repository
+  shell: curl -fsSL https://deb.nodesource.com/setup_15.x | bash -
+
+
+- name: Install nodejs
+  apt:
+    name: nodejs
+    state: latest
